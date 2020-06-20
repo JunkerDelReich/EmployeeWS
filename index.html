@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="event.preventDefault();">
+        <div>
+            <label for="nome">Nome</label><br>
+            <input type="text" placeholder="Nome" id="nome" name="nome">
+        </div>
+
+        <div>
+            <label for="salario">Salário</label><br>
+            <input type="text" placeholder="0,00" id="salario" name="salario">
+        </div>
+
+        <div>
+            <label for="idade">Idade</label><br>
+            <input type="number" placeholder="0" id="idade" name="idade">
+        </div>
+
+        <div>
+            <label for="avatar">Avatar</label><br>
+            <input type="url" placeholder="0" id="avatar" name="avatar">
+        </div>
+
+        <div>
+            <button type="button" onclick="save()">
+                Salvar
+            </button>
+            <button type="button" onclick="clear()">
+                Cancelar
+            </button>
+        </div>
+    </form>
+    <br>
+    <br>
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <td>
+                    Id
+                </td>
+                <td>
+                    Nome
+                </td>
+                <td>
+                    Salário
+                </td>
+                <td>
+                    Idade
+                </td>
+                <td>
+                    Avatar
+                </td>
+                <td>
+                    Ações
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        
+    </table>
+</body>
+
+</html>
